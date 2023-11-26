@@ -1,0 +1,257 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head
+
+  <h3><strong>Conclusion 1:</strong></h3>
+  <p  class="table-name"><strong>Table 1</strong> 表格1名称</p>
+
+  <table class="my-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>MSE</th>
+        <th>PESQ</th>
+        <th>STOI</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Before mask</td>
+        <td>0.0</td>
+        <td>4.4674</td>
+        <td>1.0</td>
+      </tr>
+      <tr>
+        <td>DAPC</td>
+        <td>0.2431±0.0763</td>
+        <td>1.6414±0.1596</td>
+        <td>0.8788±0.0240</td>
+      </tr>
+      <tr>
+        <td>Point mask</td>
+        <td>0.1010±0.0207</td>
+        <td>3.1373±0.3254</td>
+        <td>0.9602±0.0142</td>
+      </tr>
+      <tr>
+        <td>Frame mask</td>
+        <td>0.0839±0.0204</td>
+        <td>3.2113±0.3280</td>
+        <td>0.9667±0.0152</td>
+      </tr>
+      <tr>
+        <td>Cross mask</td>
+        <td>0.1936±0.0347</td>
+        <td>2.5815±0.3481</td>
+        <td>0.9487±0.0218</td>
+      </tr>
+      <tr>
+        <td>Progressive mask</td>
+        <td>0.0809±0.0186</td>
+        <td>3.1297±0.3261</td>
+        <td>0.9646±0.0138</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="wavlink">
+    <a href="#square array for CHIME-3">Samlpe on square array for CHIME-3</a> 
+  </p>
+  
+<div class="spacer"></div>
+
+<h3><strong>Conclusion 2:</strong></h3>
+<p class="table-name"><strong>Table 2</strong> PESQ of STGCCN on the circular array for cocktail party</p>
+
+<table class="my-table2">
+  <thead>
+    <tr>
+      <th>Input SNR</th>
+      <th>-4dB</th>
+      <th>-3dB</th>
+      <th>-2dB</th>
+      <th>Avg.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Noisy(channel)</td>
+      <td>1.161</td>
+      <td>1.303</td>
+      <td>1.633</td>
+      <td>1.366</td>
+    </tr>
+    <tr>
+      <td>CNN</td>
+      <td>1.347±0.246</td>
+      <td>1.530±0.270</td>
+      <td>1.753±0.270</td>
+      <td>1.543±0.311</td>
+    </tr>
+    <tr>
+      <td>UNet-GCN</td>
+      <td>1.287±0.208</td>
+      <td>1.574±0.241</td>
+      <td>1.716±0.280</td>
+      <td>1.526±0.243</td>
+    </tr>
+    <tr>
+      <td>STGCCN+<i>L<sub>MSE</sub></i></td>
+      <td><b>1.514±0.346</b></td>
+      <td><b>1.751±0.351</b></td>
+      <td><b>1.978±0.334</b></td>
+      <td><b>1.748±0.392</b></td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="wavlink">
+  <a href="#circular array for cocktail party">Samlpe on circular array for cocktail party</a> 
+</p>
+
+<div class="table-container">
+  <table  id="square array for CHIME-3" class="wav1">
+    <tr>
+      <td></td>
+      <td colspan="2">BUS</td>
+      <td colspan="2">CAF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Samlpe1</td>
+      <td>Samlpe2</td>
+      <td>Samlpe1</td>
+      <td>Samlpe2</td>
+    </tr>
+    <tr>
+      <td>
+        noisy
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\快乐崇拜.mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+    </tr>
+      <tr>
+      <td>
+        Point mask
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\快乐崇拜.mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="table-container">
+  <table  id="circular array for cocktail party" class="wav2">
+    <tr>
+      <td></td>
+      <td colspan="2">-4dB</td>
+      <td colspan="2">-3dB</td>
+      <td colspan="2">-2dB</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Samlpe1</td>
+      <td>Samlpe2</td>
+      <td>Samlpe1</td>
+      <td>Samlpe2</td>
+      <td>Samlpe1</td>
+      <td>Samlpe2</td>
+    </tr>
+    <tr>
+      <td>
+        noisy
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\快乐崇拜.mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\快乐崇拜.mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\快乐崇拜.mp3"></audio>
+        </div>
+      </td>
+    </tr>
+      <tr>
+      <td>
+        Point mask
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\快乐崇拜.mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\陪你度过漫长岁月 .mp3"></audio>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

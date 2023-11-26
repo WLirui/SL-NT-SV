@@ -1,0 +1,788 @@
+<h1>Prove the effectiveness of proposed feature-aware few-shot self-supervised learning framework</h1>
+<div>
+    <p>
+      <b style="font-size: 22px;">conclusion： </b> <br>
+      <b>1)</b>  Compared to the input in CHIME-3: Compared with the input noisy speech, the PESQ of MatricGAN-U, MatricGAN-U-SV, STGCSEN, and STGCN-SV increased by 6.97%, 33.81%, and 62.43, 73.4% respectively.<br>
+      <b>2)</b> In CHiIME-3, the PESQ of MetricGAN-U-SV is improved by 25% compared with MetricGAN-U, and the STGCN-SV is improved by 7% compared with STGCN.<br>
+      <b>3)</b> Compared to the input in cocktail party scene: Compared with the input noisy speech, the PESQ of MatricGAN-U, MatricGAN-U-SV, STGCSEN, and STGCN-SV increased by ?%, ?%, and 36.4%, 38.95% respectively.<br>
+      <b>4)</b> In the cocktail party scenario, the PESQ of MetricGAN-U-SV is improved by ?% compared with MetricGAN-U, and the STGCN-SV is improved by 2% compared with STGCN.     <br>
+      In summary, the feature-aware few-shot self-supervised learning framework proposed in our paper can aware the features of the noise environment, target speech and speaker characteristics in both background noise and interfering scenes, thereby extracting high-quality target speech.
+  </p>
+  </div>
+   <div align="center">
+    <img
+    class="fit-picture"
+    src="table2-1.png" />
+</div>
+
+<div align="center">
+  <p class="wavlink">
+    <h3><a href="#2-Performance of feature-aware few-shot self-supervised learning framework-CHIME3">Wav-CHIME3</a></h3> 
+  </p>
+</div>
+
+  <div align="center">
+    <img
+    class="fit-picture"
+    src="table2-2.png" />
+</div>
+
+<div align="center">
+  <p class="wavlink">
+    <h3><a href="#2-Performance of feature-aware few-shot self-supervised learning framework-cocktail party">Wav-cocktail party</a></h3> 
+  </p>
+</div>
+
+<div  id="#2-Performance of feature-aware few-shot self-supervised learning framework-CHIME3"  class="table-name">
+  <strong>Sample on CHIME3</strong> 
+</div>
+   <!--######333333333333###################Noisy############################-->
+ 
+   <div class="table-name">
+    <strong>Wav-Noisy</strong> 
+  </div>
+  <div class="table-container">
+    <table  class="wav1">
+      <tr>
+        <td>
+          BUS
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\BUS\noisy_fileid_0.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\BUS\noisy_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\BUS\noisy_fileid_25.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\BUS\noisy_fileid_29.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+        <tr>
+        <td>
+          CAF
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\CAF\noisy_fileid_6.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\CAF\noisy_fileid_11.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\CAF\noisy_fileid_14.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\CAF\noisy_fileid_23.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          PED
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\PED\noisy_fileid_12.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\PED\noisy_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\PED\noisy_fileid_28.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\PED\noisy_fileid_31.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          STR
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\STR\noisy_fileid_1.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\STR\noisy_fileid_3.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\STR\noisy_fileid_18.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\Noisy\STR\noisy_fileid_22.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+     <!--######333333333333###################MetricGAN-U############################-->
+ 
+     <div  class="table-name">
+        <strong>Wav-MetricGAN-U</strong> 
+      </div>
+      <div class="table-container">
+        <table  class="wav1">
+          <tr>
+            <td>
+              BUS
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\BUS\enhanced_MeriGan_fileid_0_bus.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\BUS\enhanced_MeriGan_fileid_13_bus.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\BUS\enhanced_MeriGan_fileid_25_bus.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\BUS\enhanced_MeriGan_fileid_29_bus.wav"></audio>
+              </div>
+            </td>
+          </tr>
+    
+            <tr>
+            <td>
+              CAF
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\CAF\enhanced_MeriGan_fileid_6_caf.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\CAF\enhanced_MeriGan_fileid_11_caf.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\CAF\enhanced_MeriGan_fileid_14_caf.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\CAF\enhanced_MeriGan_fileid_23_caf.wav"></audio>
+              </div>
+            </td>
+          </tr>
+    
+          <tr>
+            <td>
+              PED
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\PED\enhanced_MeriGan_fileid_12_ped.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\PED\enhanced_MeriGan_fileid_13_ped.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\PED\enhanced_MeriGan_fileid_28_ped.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\PED\enhanced_MeriGan_fileid_31_ped.wav"></audio>
+              </div>
+            </td>
+          </tr>
+    
+          <tr>
+            <td>
+              STR
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\STR\enhanced_MeriGan_fileid_1_str.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\STR\enhanced_MeriGan_fileid_3_str.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\STR\enhanced_MeriGan_fileid_18_str.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U\STR\enhanced_MeriGan_fileid_22_str.wav"></audio>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+           <!--######333333333333###################MetricGAN-U-SV############################-->
+ 
+     <div  class="table-name">
+      <strong>Wav-MetricGAN-U-SV</strong> 
+    </div>
+    <div class="table-container">
+      <table  class="wav1">
+        <tr>
+          <td>
+            BUS
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\BUS\enhanced_STGCSEN_fileid_0.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\BUS\enhanced_STGCSEN_fileid_13.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\BUS\enhanced_STGCSEN_fileid_25.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\BUS\enhanced_STGCSEN_fileid_29.wav"></audio>
+            </div>
+          </td>
+        </tr>
+  
+          <tr>
+          <td>
+            CAF
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\CAF\enhanced_STGCSEN_fileid_6.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\CAF\enhanced_STGCSEN_fileid_11.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\CAF\enhanced_STGCSEN_fileid_14.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\CAF\enhanced_STGCSEN_fileid_23.wav"></audio>
+            </div>
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            PED
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\PED\enhanced_STGCSEN_fileid_12.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\PED\enhanced_STGCSEN_fileid_13.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\PED\enhanced_STGCSEN_fileid_28.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\PED\enhanced_STGCSEN_fileid_31.wav"></audio>
+            </div>
+          </td>
+        </tr>
+  
+        <tr>
+          <td>
+            STR
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\STR\enhanced_STGCSEN_fileid_1.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\STR\enhanced_STGCSEN_fileid_3.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\STR\enhanced_STGCSEN_fileid_18.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\MetricGAN-U-SV\STR\enhanced_STGCSEN_fileid_22.wav"></audio>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+               <!--######333333333333###################STGCN############################-->
+ 
+               <div  class="table-name">
+                <strong>STGCN</strong> 
+              </div>
+              <div class="table-container">
+                <table  class="wav1">
+                  <tr>
+                    <td>
+                      BUS
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_0.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_13.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_25.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_29.wav"></audio>
+                      </div>
+                    </td>
+                  </tr>
+            
+                    <tr>
+                    <td>
+                      CAF
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_6.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_11.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_14.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_23.wav"></audio>
+                      </div>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>
+                      PED
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_12.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_13.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_28.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_31.wav"></audio>
+                      </div>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>
+                      STR
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_1.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_3.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_18.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_22.wav"></audio>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <!--######333333333333###################STGCN-SV############################-->
+ 
+              <div  class="table-name">
+                <strong>STGCN-SV</strong> 
+              </div>
+              <div class="table-container">
+                <table  class="wav1">
+                  <tr>
+                    <td>
+                      BUS
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\BUS\enhanced_fileid_0_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\BUS\enhanced_fileid_13_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\BUS\enhanced_fileid_25_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\BUS\enhanced_fileid_29_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                  </tr>
+            
+                    <tr>
+                    <td>
+                      CAF
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\CAF\enhanced_fileid_6_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\CAF\enhanced_fileid_11_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\CAF\enhanced_fileid_11_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\CAF\enhanced_fileid_23_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>
+                      PED
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\PED\enhanced_fileid_12_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\PED\enhanced_fileid_13_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\PED\enhanced_fileid_28_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\PED\enhanced_fileid_31_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                  </tr>
+            
+                  <tr>
+                    <td>
+                      STR
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\STR\enhanced_fileid_1_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\STR\enhanced_fileid_3_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\STR\enhanced_fileid_18_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                    <td>
+                      <div>
+                        <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\CHIME3\STGCN-SV\STR\enhanced_fileid_22_out_STGCSEN_NTA_MSE.wav"></audio>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+
+              <!--######333333333333###################Noisy############################-->
+ 
+   <div  id="2-Performance of feature-aware few-shot self-supervised learning framework-cocktail party"  class="table-name">
+    <strong>Sample on cocktail party</strong> 
+  </div>
+
+  <div  class="table-name">
+    <strong>Wav-Noisy</strong> 
+  </div>
+  <div class="table-container">
+    <table  class="wav1">
+      <tr>
+        <td>
+          itf_SNR10
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\noisy\noisy_fileid_1_01326_04069_23_05919_53_snr10_tl-17.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\noisy\noisy_fileid_8_01326_08897_8_00927_45_snr10_tl-33.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\noisy\noisy_fileid_16_01326_02124_43_07339_79_snr10_tl-24.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\noisy\noisy_fileid_21_01326_08897_48_05919_60_snr10_tl-24.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+        <tr>
+        <td>
+          itf_SNR15
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\noisy\noisy_fileid_12_01326_08897_71_05919_79_snr15_tl-25.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\noisy\noisy_fileid_18_01326_04069_61_08897_83_snr15_tl-29.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\noisy\noisy_fileid_27_01326_00927_61_07639_75_snr15_tl-27.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\noisy\noisy_fileid_41_01326_04069_22_03955_62_snr15_tl-27.wav"></audio>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+     <!--######333333333333###################STGCSEN############################--> 
+  </div>
+  <div  class="table-name">
+    <strong>STGCSEN</strong> 
+  </div>
+  <div class="table-container">
+    <table  class="wav1">
+      <tr>
+        <td>
+          itf_SNR10
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\STGCSEN\enhanced_STGCSEN_fileid_1_reader_01326.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\STGCSEN\enhanced_STGCSEN_fileid_8_reader_01326.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\STGCSEN\enhanced_STGCSEN_fileid_16_reader_01326.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\STGCSEN\enhanced_STGCSEN_fileid_21_reader_01326.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+        <tr>
+        <td>
+          itf_SNR15
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\STGCSEN\enhanced_STGCSEN_fileid_12_reader_01326.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\STGCSEN\enhanced_STGCSEN_fileid_18_reader_01326.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\STGCSEN\enhanced_STGCSEN_fileid_27_reader_01326.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\STGCSEN\enhanced_STGCSEN_fileid_41_reader_01326.wav"></audio>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+       <!--######333333333333###################STGCSEN-SV############################--> 
+      </div>
+      <div  class="table-name">
+        <strong>STGCSEN-SV</strong> 
+      </div>
+      <div class="table-container">
+        <table  class="wav1">
+          <tr>
+            <td>
+              itf_SNR10
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\STGCSEN_SV\enhanced_STGCSEN_fileid_1_reader_01326.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\STGCSEN_SV\enhanced_STGCSEN_fileid_8_reader_01326.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\STGCSEN_SV\enhanced_STGCSEN_fileid_16_reader_01326.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR10\STGCSEN_SV\enhanced_STGCSEN_fileid_21_reader_01326.wav"></audio>
+              </div>
+            </td>
+          </tr>
+    
+            <tr>
+            <td>
+              itf_SNR15
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\STGCSEN\enhanced_STGCSEN_fileid_12_reader_01326.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\STGCSEN\enhanced_STGCSEN_fileid_18_reader_01326.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\STGCSEN\enhanced_STGCSEN_fileid_27_reader_01326.wav"></audio>
+              </div>
+            </td>
+            <td>
+              <div>
+                <audio controls src="wav\2-Performance of feature-aware few-shot self-supervised learning framework\cocktail party\itf_SNR15\STGCSEN\enhanced_STGCSEN_fileid_41_reader_01326.wav"></audio>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
