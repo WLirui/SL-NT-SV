@@ -107,3 +107,12 @@
   .my-table2 td:nth-child(4) {
   border-right: 1.5px solid black;
   }
+
+ .link {
+    text-decoration: none; /* 去除下划线 */
+    color: black; /* 设置链接颜色 */
+    transition: color 0.3s; /* 添加颜色过渡效果 */
+  }
+.link:hover {
+    color: #ff0000; /* 设置鼠标悬停时的颜色 */
+  }
