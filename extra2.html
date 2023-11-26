@@ -1,26 +1,25 @@
-<h1>Prove the effectiveness of proposed feature-aware few-shot self-supervised learning framework</h1>
-<div>
-    <p>
-      <b style="font-size: 22px;">conclusion： </b> <br>
-      <b>1)</b>  Compared to the input in CHIME-3: Compared with the input noisy speech, the PESQ of MatricGAN-U, MatricGAN-U-SV, STGCSEN, and STGCN-SV increased by 6.97%, 33.81%, and 62.43, 73.4% respectively.<br>
-      <b>2)</b> In CHiIME-3, the PESQ of MetricGAN-U-SV is improved by 25% compared with MetricGAN-U, and the STGCN-SV is improved by 7% compared with STGCN.<br>
-      <b>3)</b> Compared to the input in cocktail party scene: Compared with the input noisy speech, the PESQ of MatricGAN-U, MatricGAN-U-SV, STGCSEN, and STGCN-SV increased by ?%, ?%, and 36.4%, 38.95% respectively.<br>
-      <b>4)</b> In the cocktail party scenario, the PESQ of MetricGAN-U-SV is improved by ?% compared with MetricGAN-U, and the STGCN-SV is improved by 2% compared with STGCN.     <br>
-      In summary, the feature-aware few-shot self-supervised learning framework proposed in our paper can aware the features of the noise environment, target speech and speaker characteristics in both background noise and interfering scenes, thereby extracting high-quality target speech.
-  </p>
-  </div>
-   <div align="center">
+<h1>Effectiveness of proposed feature-aware few-shot self-supervised learning framework</h1>
+
+<div align="center">
     <img
     class="fit-picture"
     src="table2-1.png" />
+    
 </div>
+
 
 <div align="center">
   <p class="wavlink">
     <h3><a href="#2-Performance of feature-aware few-shot self-supervised learning framework-CHIME3">Wav-CHIME3</a></h3> 
   </p>
 </div>
-
+<div>
+    <p>
+        <b style="font-size: 20px;">Results Analysis in CHiME-3  </b> <br>
+        <b>1)</b>  Compared to the input in CHIME-3: Compared with the input noisy speech, the PESQ of MatricGAN-U, MatricGAN-U-SV, STGCSEN, and STGCN-SV increased by 6.97%, 33.81%, and 62.43, 73.4% respectively.<br>
+        <b>2)</b> In CHiIME-3, the PESQ of MetricGAN-U-SV is improved by 25% compared with MetricGAN-U, and the STGCN-SV is improved by 7% compared with STGCN.<br>
+    </p>
+</div>
   <div align="center">
     <img
     class="fit-picture"
@@ -33,19 +32,33 @@
   </p>
 </div>
 
+<div>
+    <p>
+        <b style="font-size: 20px;">Results Analysis in cocktail party  </b> <br>
+        <b>1)</b> Compared to the input in cocktail party scene: Compared with the input noisy speech, the PESQ of MatricGAN-U, MatricGAN-U-SV, STGCSEN, and STGCN-SV increased by 14%, 23%, and 36%, 39% respectively.<br>
+        <b>2)</b> In the cocktail party scene, the PESQ of MetricGAN-U-SV is improved by 8% compared with MetricGAN-U, and the STGCN-SV is improved by 2% compared with STGCN.     <br>
+  </p>
+</div>
+
+<div>
+    <p>
+        <b style="font-size: 20px;">Conclusion:  </b> <br>
+        Proposed learning framework does not only been proved to be effective with STGCN (7% improvement in CHIME3 and 3% improvement in cocktail party), but also show good performce with the other speech enhancement models (eg. MetricGAN, 25% improvement in CHiME-3, 9% improvement in cocktail party).
+    </p>
+</div>
 <div  id="#2-Performance of feature-aware few-shot self-supervised learning framework-CHIME3"  class="table-name">
-  <strong>Sample on CHIME3</strong> 
+  <strong>Samples on CHIME3</strong> 
 </div>
    <!--######333333333333###################Noisy############################-->
  
    <div class="table-name">
-    <strong>Wav-Noisy</strong> 
+    <strong>BUS</strong> 
   </div>
   <div class="table-container">
     <table  class="wav1">
       <tr>
         <td>
-          BUS
+          clean
         </td>
         <td>
           <div>

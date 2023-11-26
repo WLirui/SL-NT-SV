@@ -1,57 +1,23 @@
 <h1>Proposed self-supervised speech enhancement based on speaker verification</h1>
 <div align="center">
     <img
+    width="100%"
     class="fit-picture"
     src="table1.png" />
 </div>
 
 <h2>Wav</h2>
-<!--########################################CNN######################################-->
-<p class="wavlink">
-  <h3><a href="#1-Proposed method-clean">Wav-clean</a></h3> 
-</p>
-<p class="wavlink">
-  <h3><a href="#1-Proposed method-Noisy">Wav-Noisy</a></h3> 
-</p>
 
-<p class="wavlink">
-    <h3><a href="#1-Proposed method-CNN">Wav-CNN</a></h3> 
-  </p>
-  <p class="wavlink">
-    <h3><a href="#1-Proposed method-LSTM-IPD">Wav-LSTM-IPD</a></h3> 
-  </p>
-
-  <p class="wavlink">
-    <h3><a href="#1-Proposed method-UNet-GCN">Wav-UNet-GCN</a></h3> 
-  </p>
-  <p class="wavlink">
-    <h3><a href="#1-Proposed method-STGCN">Wav-STGCN</a></h3> 
-  </p>
-  <p class="wavlink">
-    <h3><a href="#1-Proposed method-STGCN-NA">Wav-STGCN-NA</a></h3> 
-  </p>
-  <p class="wavlink">
-    <h3><a href="#1-Proposed method-STGCN-NTA">Wav-STGCN-NTA</a></h3> 
-  </p>
-  <p class="wavlink">
-    <h3><a href="#1-Proposed method-MetricGAN-U">Wav-MetricGAN</a></h3> 
-  </p>
-  <p class="wavlink">
-    <h3><a href="#1-Proposed method-STGCN-SV">Wav-STGCN-SV</a></h3> 
-  </p>
-  
-
-
-  <!--######333333333333###################clean############################-->
+  <!--######333333333333###################BUS############################-->
  
   <div  class="table-name">
-    <strong>Wav-clean</strong> 
+    <strong>BUS</strong> 
   </div>
   <div class="table-container">
     <table  id="1-Proposed method-clean" class="wav1">
       <tr>
         <td>
-          BUS
+          Clean
         </td>
         <td>
           <div>
@@ -75,9 +41,253 @@
         </td>
       </tr>
 
-        <tr>
+      <tr>
         <td>
-          CAF
+          Noisy
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\Noisy\BUS\noisy_fileid_0.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\Noisy\BUS\noisy_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\Noisy\BUS\noisy_fileid_25.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\Noisy\BUS\noisy_fileid_29.wav"></audio>
+          </div>
+        </td>
+      </tr>  
+
+      <tr>
+        <td>
+          CNN
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\BUS\noisy_fileid_0.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\BUS\noisy_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\BUS\noisy_fileid_25.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\BUS\noisy_fileid_29.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          LSTM
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\BUS\noisy_fileid_0.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\BUS\noisy_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\BUS\noisy_fileid_25.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\BUS\noisy_fileid_29.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          UNet-GCN
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\UNet-GCN\BUS\UNet_GCN_fileid_0.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\UNet-GCN\BUS\UNet_GCN_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\UNet-GCN\BUS\UNet_GCN_fileid_25.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\UNet-GCN\BUS\UNet_GCN_fileid_29.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          STGCN
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_0.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_25.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_29.wav"></audio>
+          </div>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          STGCN-NA-CONT
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\BUS\enhanced_STGCSEN_fileid_0.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\BUS\enhanced_STGCSEN_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\BUS\enhanced_STGCSEN_fileid_25.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\BUS\enhanced_STGCSEN_fileid_29.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          STGCN-NTA
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NTA\BUS\enhanced_fileid_0_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NTA\BUS\enhanced_fileid_13_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NTA\BUS\enhanced_fileid_25_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NTA\BUS\enhanced_fileid_29_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          MetricGAN-U
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\BUS\enhanced_MeriGan_fileid_0_bus.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\BUS\enhanced_MeriGan_fileid_13_bus.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\BUS\enhanced_MeriGan_fileid_25_bus.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\BUS\enhanced_MeriGan_fileid_29_bus.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          STGCN-SV
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\BUS\enhanced_fileid_0_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\BUS\enhanced_fileid_13_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\BUS\enhanced_fileid_25_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\BUS\enhanced_fileid_29_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+
+ 
+  <div  class="table-name">
+    <strong>CAF</strong> 
+  </div>
+  <div class="table-container">
+    <table  id="1-Proposed method-Noisy" class="wav1">
+      <tr>
+        <td>
+          Clean
         </td>
         <td>
           <div>
@@ -101,98 +311,9 @@
         </td>
       </tr>
 
-      <tr>
-        <td>
-          PED
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\clean\PED\clean_fileid_12.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\clean\PED\clean_fileid_13.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\clean\PED\clean_fileid_28.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\clean\PED\clean_fileid_31.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          STR
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\clean\STR\clean_fileid_1.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\clean\STR\clean_fileid_3.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\clean\STR\clean_fileid_18.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\clean\STR\clean_fileid_22.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
-    </table>
-  </div>
-
-
-  <!--######333333333333###################Noisy############################-->
- 
-  <div  class="table-name">
-    <strong>Wav-Noisy</strong> 
-  </div>
-  <div class="table-container">
-    <table  id="1-Proposed method-Noisy" class="wav1">
-      <tr>
-        <td>
-          BUS
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\BUS\noisy_fileid_0.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\BUS\noisy_fileid_13.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\BUS\noisy_fileid_25.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\BUS\noisy_fileid_29.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
         <tr>
         <td>
-          CAF
+          Noisy
         </td>
         <td>
           <div>
@@ -218,95 +339,7 @@
 
       <tr>
         <td>
-          PED
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\PED\noisy_fileid_12.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\PED\noisy_fileid_13.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\PED\noisy_fileid_28.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\PED\noisy_fileid_31.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          STR
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\STR\noisy_fileid_1.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\STR\noisy_fileid_3.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\STR\noisy_fileid_18.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\Noisy\STR\noisy_fileid_22.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
-    </table>
-  </div>
-
-<!--######333333333333###################CNN############################-->
-  <div  class="table-name">
-    <strong>Wav-CNN</strong> 
-  </div>
-  <div class="table-container">
-    <table  id="1-Proposed method-CNN" class="wav1">
-      
-      <tr>
-        <td>
-          BUS
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\BUS\noisy_fileid_0.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\BUS\noisy_fileid_13.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\BUS\noisy_fileid_25.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\BUS\noisy_fileid_29.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
-        <tr>
-        <td>
-          CAF
+          CNN
         </td>
         <td>
           <div>
@@ -332,95 +365,7 @@
 
       <tr>
         <td>
-          PED
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\PED\noisy_fileid_12.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\PED\noisy_fileid_13.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\PED\noisy_fileid_28.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\PED\noisy_fileid_31.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          STR
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\STR\noisy_fileid_1.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\STR\noisy_fileid_3.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\STR\noisy_fileid_18.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\CNN\STR\noisy_fileid_22.wav"></audio>
-          </div>
-        </td>
-      </tr>
-      
-    </table>
-  </div>
-  
-  <!--######333333333333###################LSTM-IPD############################-->
- 
-  <div  class="table-name">
-    <strong>Wav-LSTM-IPD</strong> 
-  </div>
-  <div class="table-container">
-    <table  id="1-Proposed method-LSTM-IPD" class="wav1">
-      <tr>
-        <td>
-          BUS
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\BUS\noisy_fileid_0.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\BUS\noisy_fileid_13.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\BUS\noisy_fileid_25.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\BUS\noisy_fileid_29.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
-        <tr>
-        <td>
-          CAF
+          LSTM
         </td>
         <td>
           <div>
@@ -446,94 +391,7 @@
 
       <tr>
         <td>
-          PED
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\PED\noisy_fileid_12.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\PED\noisy_fileid_13.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\PED\noisy_fileid_28.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\PED\noisy_fileid_31.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          STR
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\STR\noisy_fileid_1.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\STR\noisy_fileid_3.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\STR\noisy_fileid_18.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\LSTM\STR\noisy_fileid_22.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
-    </table>
-  </div>
-   <!--######333333333333###################UNet-GCN############################-->
- 
-   <div  class="table-name">
-    <strong>Wav-UNet-GCN</strong> 
-  </div>
-  <div class="table-container">
-    <table  id="1-Proposed method-UNet-GCN" class="wav1">
-      <tr>
-        <td>
-          BUS
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\UNet-GCN\BUS\UNet_GCN_fileid_0.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\UNet-GCN\BUS\UNet_GCN_fileid_13.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\UNet-GCN\BUS\UNet_GCN_fileid_25.wav"></audio>
-          </div>
-        </td>
-        <td>
-          <div>
-            <audio controls src="wav\1-Proposed method\UNet-GCN\BUS\UNet_GCN_fileid_29.wav"></audio>
-          </div>
-        </td>
-      </tr>
-
-        <tr>
-        <td>
-          CAF
+          UNet-GCN
         </td>
         <td>
           <div>
@@ -559,7 +417,226 @@
 
       <tr>
         <td>
-          PED
+          STGCN
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_6.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_11.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_14.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_23.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          STGCN-NA-CONT
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\CAF\enhanced_STGCSEN_fileid_6.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\CAF\enhanced_STGCSEN_fileid_11.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\CAF\enhanced_STGCSEN_fileid_14.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\CAF\enhanced_STGCSEN_fileid_23.wav"></audio>
+          </div>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>
+          MetricGAN-U
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\CAF\enhanced_MeriGan_fileid_6_caf.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\CAF\enhanced_MeriGan_fileid_11_caf.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\CAF\enhanced_MeriGan_fileid_14_caf.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\CAF\enhanced_MeriGan_fileid_23_caf.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          STGCN-SV
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\CAF\enhanced_fileid_6_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\CAF\enhanced_fileid_11_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\CAF\enhanced_fileid_14_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\CAF\enhanced_fileid_23_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+<!--######333333333333###################CNN############################-->
+  <div  class="table-name">
+    <strong>PED</strong> 
+  </div>
+  <div class="table-container">
+    <table  id="1-Proposed method-CNN" class="wav1">
+         
+        <tr>
+          <td>
+            Clean
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\1-Proposed method\clean\PED\clean_fileid_12.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\1-Proposed method\clean\PED\clean_fileid_13.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\1-Proposed method\clean\PED\clean_fileid_28.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\1-Proposed method\clean\PED\clean_fileid_31.wav"></audio>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            Noisy
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\1-Proposed method\Noisy\PED\noisy_fileid_12.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\1-Proposed method\Noisy\PED\noisy_fileid_13.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\1-Proposed method\Noisy\PED\noisy_fileid_28.wav"></audio>
+            </div>
+          </td>
+          <td>
+            <div>
+              <audio controls src="wav\1-Proposed method\Noisy\PED\noisy_fileid_31.wav"></audio>
+            </div>
+          </td>
+        </tr>
+        <tr>
+
+       <td>
+          CNN
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\PED\noisy_fileid_12.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\PED\noisy_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\PED\noisy_fileid_28.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\PED\noisy_fileid_31.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+              
+      <tr>
+        <td>
+          LSTM
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\PED\noisy_fileid_12.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\PED\noisy_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\PED\noisy_fileid_28.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\PED\noisy_fileid_31.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          UNet-GCN
         </td>
         <td>
           <div>
@@ -585,7 +662,252 @@
 
       <tr>
         <td>
-          STR
+          STGCN
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_12.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_28.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_31.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          STGCN-NA-CONT
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\PED\enhanced_STGCSEN_fileid_12.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\PED\enhanced_STGCSEN_fileid_13.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\PED\enhanced_STGCSEN_fileid_28.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\PED\enhanced_STGCSEN_fileid_31.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          STGCN-NTA
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NTA\PED\enhanced_fileid_12_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NTA\PED\enhanced_fileid_13_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NTA\PED\enhanced_fileid_28_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NTA\PED\enhanced_fileid_31_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          MetricGAN-U
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\PED\enhanced_MeriGan_fileid_12_ped.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\PED\enhanced_MeriGan_fileid_13_ped.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\PED\enhanced_MeriGan_fileid_28_ped.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\MetricGAN-U\PED\enhanced_MeriGan_fileid_31_ped.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          STGCN-SV
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\PED\enhanced_fileid_12_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\PED\enhanced_fileid_13_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\PED\enhanced_fileid_28_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-SV\PED\enhanced_fileid_31_out_STGCSEN_NTA_MSE.wav"></audio>
+          </div>
+        </td>
+      </tr>
+      
+    </table>
+  </div>
+  
+  <!--######333333333333###################STR############################-->
+ 
+  <div  class="table-name">
+    <strong>STR</strong> 
+  </div>
+  <div class="table-container">
+    <table  id="1-Proposed method-LSTM-IPD" class="wav1">
+
+      <tr>
+        <td>
+          Clean
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\clean\STR\clean_fileid_1.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\clean\STR\clean_fileid_3.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\clean\STR\clean_fileid_18.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\clean\STR\clean_fileid_22.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          Noisy
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\Noisy\STR\noisy_fileid_1.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\Noisy\STR\noisy_fileid_3.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\Noisy\STR\noisy_fileid_18.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\Noisy\STR\noisy_fileid_22.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          CNN
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\STR\noisy_fileid_1.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\STR\noisy_fileid_3.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\STR\noisy_fileid_18.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\CNN\STR\noisy_fileid_22.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          LSTM
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\STR\noisy_fileid_1.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\STR\noisy_fileid_3.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\STR\noisy_fileid_18.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\LSTM\STR\noisy_fileid_22.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          UNet-GCN
         </td>
         <td>
           <div>
@@ -609,586 +931,136 @@
         </td>
       </tr>
 
+      <tr>
+        <td>
+          STGCN
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_1.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_3.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_18.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_22.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          STGCN-NA-CONT
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\STR\enhanced_STGCSEN_fileid_1.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\STR\enhanced_STGCSEN_fileid_3.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\STR\enhanced_STGCSEN_fileid_18.wav"></audio>
+          </div>
+        </td>
+        <td>
+          <div>
+            <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\STR\enhanced_STGCSEN_fileid_22.wav"></audio>
+          </div>
+        </td>
+      </tr>
+
+      <td>
+        STGCN-NTA
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\STGCN-NTA\STR\enhanced_fileid_1_out_STGCSEN_NTA_MSE.wav"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\STGCN-NTA\STR\enhanced_fileid_3_out_STGCSEN_NTA_MSE.wav"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\STGCN-NTA\STR\enhanced_fileid_18_out_STGCSEN_NTA_MSE.wav"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\STGCN-NTA\STR\enhanced_fileid_22_out_STGCSEN_NTA_MSE.wav"></audio>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        MetricGAN-U
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\MetricGAN-U\STR\enhanced_MeriGan_fileid_1_str.wav"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\MetricGAN-U\STR\enhanced_MeriGan_fileid_3_str.wav"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\MetricGAN-U\STR\enhanced_MeriGan_fileid_18_str.wav"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\MetricGAN-U\STR\enhanced_MeriGan_fileid_22_str.wav"></audio>
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        STGCN-SV
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\STGCN-SV\STR\enhanced_fileid_1_out_STGCSEN_NTA_MSE.wav"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\STGCN-SV\STR\enhanced_fileid_3_out_STGCSEN_NTA_MSE.wav"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\STGCN-SV\STR\enhanced_fileid_18_out_STGCSEN_NTA_MSE.wav"></audio>
+        </div>
+      </td>
+      <td>
+        <div>
+          <audio controls src="wav\1-Proposed method\STGCN-SV\STR\enhanced_fileid_22_out_STGCSEN_NTA_MSE.wav"></audio>
+        </div>
+      </td>
+    </tr>
+
     </table>
   </div>
 
-       <!--######333333333333###################STGCN############################-->
-    
-       <div  class="table-name">
-        <strong>Wav-STGCN</strong> 
-      </div>
-      <div class="table-container">
-        <table  id="1-Proposed method-STGCN" class="wav1">
-    
-            <tr>
-                <td>
-                  BUS
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_0.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_13.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_25.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\BUS\enhanced_STGCSEN_fileid_29.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-                <tr>
-                <td>
-                  CAF
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_6.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_11.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_14.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\CAF\enhanced_STGCSEN_fileid_23.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-              <tr>
-                <td>
-                  PED
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_12.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_13.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_28.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\PED\enhanced_STGCSEN_fileid_31.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-              <tr>
-                <td>
-                  STR
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_1.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_3.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_18.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN\STR\enhanced_STGCSEN_fileid_22.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-          
-    
-        </table>
-      </div>
-
-        </table>
-      </div>
-
-
-    <!--######333333333333###################STGCN-NA-CONT############################-->
-   
-    <div  class="table-name">
-        <strong>Wav-STGCN-NA</strong> 
-      </div>
-      <div class="table-container">
-        <table  id="1-Proposed method-STGCN-NA" class="wav1">
-          <tr>
-            <td>
-              BUS
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\BUS\enhanced_STGCSEN_fileid_0.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\BUS\enhanced_STGCSEN_fileid_13.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\BUS\enhanced_STGCSEN_fileid_25.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\BUS\enhanced_STGCSEN_fileid_29.wav"></audio>
-              </div>
-            </td>
-          </tr>
-    
-            <tr>
-            <td>
-              CAF
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\CAF\enhanced_STGCSEN_fileid_6.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\CAF\enhanced_STGCSEN_fileid_11.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\CAF\enhanced_STGCSEN_fileid_14.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\CAF\enhanced_STGCSEN_fileid_23.wav"></audio>
-              </div>
-            </td>
-          </tr>
-    
-          <tr>
-            <td>
-              PED
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\PED\enhanced_STGCSEN_fileid_12.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\PED\enhanced_STGCSEN_fileid_13.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\PED\enhanced_STGCSEN_fileid_28.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\PED\enhanced_STGCSEN_fileid_31.wav"></audio>
-              </div>
-            </td>
-          </tr>
-    
-          <tr>
-            <td>
-              STR
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\STR\enhanced_STGCSEN_fileid_1.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\STR\enhanced_STGCSEN_fileid_3.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\STR\enhanced_STGCSEN_fileid_18.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NA-CONT\STR\enhanced_STGCSEN_fileid_22.wav"></audio>
-              </div>
-            </td>
-          </tr>
-    
-        </table>
-      </div>
-
-        </table>
-      </div>
-    <!--######333333333333###################STGCN-NTA############################-->
-   
-    <div  class="table-name">
-        <strong>Wav-STGCN-NTA</strong> 
-      </div>
-      <div class="table-container">
-        <table  id="1-Proposed method-STGCN-NTA" class="wav1">
-          <tr>
-            <td>
-              BUS
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\BUS\enhanced_fileid_0_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\BUS\enhanced_fileid_13_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\BUS\enhanced_fileid_25_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\BUS\enhanced_fileid_29_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-          </tr>
-    
-            <tr>
-            <td>
-              CAF
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\CAF\enhanced_fileid_6_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\CAF\enhanced_fileid_11_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\CAF\enhanced_fileid_14_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\CAF\enhanced_fileid_23_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-          </tr>
-    
-          <tr>
-            <td>
-              PED
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\PED\enhanced_fileid_12_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\PED\enhanced_fileid_13_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\PED\enhanced_fileid_28_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\PED\enhanced_fileid_31_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-          </tr>
-    
-          <tr>
-            <td>
-              STR
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\STR\enhanced_fileid_1_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\STR\enhanced_fileid_3_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\STR\enhanced_fileid_18_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-            <td>
-              <div>
-                <audio controls src="wav\1-Proposed method\STGCN-NTA\STR\enhanced_fileid_22_out_STGCSEN_NTA_MSE.wav"></audio>
-              </div>
-            </td>
-          </tr>
-    
-        </table>
-      </div>
-
-    
-<!--######333333333333###################MetricGAN-U############################-->
-          <div  class="table-name">
-            <strong>Wav-MetricGAN</strong> 
-          </div>
-    
-          <div class="table-container">
-            <table  id="1-Proposed method-MetricGAN-U" class="wav1">
-              <tr>
-                <td>
-                  BUS
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\BUS\enhanced_MeriGan_fileid_0_bus.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\BUS\enhanced_MeriGan_fileid_13_bus.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\BUS\enhanced_MeriGan_fileid_25_bus.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\BUS\enhanced_MeriGan_fileid_29_bus.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-                <tr>
-                <td>
-                  CAF
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\CAF\enhanced_MeriGan_fileid_6_caf.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\CAF\enhanced_MeriGan_fileid_11_caf.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\CAF\enhanced_MeriGan_fileid_14_caf.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\CAF\enhanced_MeriGan_fileid_23_caf.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-              <tr>
-                <td>
-                  PED
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\PED\enhanced_MeriGan_fileid_12_ped.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\PED\enhanced_MeriGan_fileid_13_ped.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\PED\enhanced_MeriGan_fileid_28_ped.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\PED\enhanced_MeriGan_fileid_31_ped.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-              <tr>
-                <td>
-                  STR
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\STR\enhanced_MeriGan_fileid_1_str.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\STR\enhanced_MeriGan_fileid_3_str.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\STR\enhanced_MeriGan_fileid_18_str.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\MetricGAN-U\STR\enhanced_MeriGan_fileid_22_str.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-            </table>
-          </div>
-    
-
- <!--######333333333333###################STGCN-SV############################-->
-          <div  class="table-name">
-            <strong>Wav-STGCN-SV</strong> 
-          </div>
-    
-          <div class="table-container">
-            <table  id="1-Proposed method-STGCN-SV" class="wav1">
-              <tr>
-                <td>
-                  BUS
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\BUS\enhanced_fileid_0_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\BUS\enhanced_fileid_13_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\BUS\enhanced_fileid_25_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\BUS\enhanced_fileid_29_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-                <tr>
-                <td>
-                  CAF
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\CAF\enhanced_fileid_6_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\CAF\enhanced_fileid_11_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\CAF\enhanced_fileid_14_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\CAF\enhanced_fileid_23_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-              <tr>
-                <td>
-                  PED
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\PED\enhanced_fileid_12_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\PED\enhanced_fileid_13_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\PED\enhanced_fileid_28_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\PED\enhanced_fileid_31_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-              <tr>
-                <td>
-                  STR
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\STR\enhanced_fileid_1_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\STR\enhanced_fileid_3_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\STR\enhanced_fileid_18_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-                <td>
-                  <div>
-                    <audio controls src="wav\1-Proposed method\STGCN-SV\STR\enhanced_fileid_22_out_STGCSEN_NTA_MSE.wav"></audio>
-                  </div>
-                </td>
-              </tr>
-        
-            </table>
-          </div>
     
