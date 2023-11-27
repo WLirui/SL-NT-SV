@@ -28,7 +28,16 @@
 
 <!-- ############################################链接################################ -->
 
-<h2><a href="https://ahuei.github.io/stgcsen"  class="link" >1.Our published work: STGCCN[1]</a></h1> 
+
+<h2><a>1.Our published work: STGCN[1]</a></h1> 
+  <p class="col-md">    
+    The detials of multi-dimentional spatial-temporal graph convolution network have been published in reference[1].</p>
+    <!-- The audio clips and samples ：click here            -->
+    <!-- The link of pdf the the paper：click here -->
+  <p class="col-md">[1]M. Hao, J. Yu and L. Zhang, "Spatial-Temporal Graph Convolution Network for Multichannel Speech Enhancement,"
+    ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Singapore, Singapore, 2022, pp. 6512-6516
+    [<a href="https://doi.org/10.1109/ICASSP43922.2022.9746054"  class="link" >Paper</a>] [<a href="https://ahuei.github.io/stgcsen"  class="link" >Audio clips</a>]   
+  </p>   
 
 <!-- <h2>2.Demonstrate the effectiveness of proposed self-supervised learning framework with speaker verification </h2>  -->
 <!-- <h2>3.Demonstrate the effectiveness of proposed feature-aware few-shot self-supervised learning framework on cocktail party</h2> -->
@@ -47,14 +56,126 @@
 
 <!-- ############################################ extra1 ############################################ -->
 <!-- ############################################ extra1 ############################################ -->
-
-<h2>2.Demonstrate the effectiveness of proposed self-supervised learning framework with speaker verification on CHiME-3</h2>
-<div align="center">
+<h2>2.Experimental validations</h2>
+<h3>A.Experiments on the effectiveness of proposed self-supervised learning framework with speaker verification on CHiME-3</h3>
+<!-- <div align="center">
     <img
-    width="70%"
+    width=750px
     class="fit-picture"
     src="table1.png" />
+</div> -->
+
+
+<!-- ############################################ Table 1 ############################################ -->
+<p align="center"><strong>Table 1</strong> Ablation experiment results in multiple noisy scenes</p>  
+<div>  
+  <table class="my-table2">
+    <thead>
+      <tr>
+        <td></td>
+        <td ></td>
+        <td scope="rol"></td>
+        <td ></td>
+        <td><b>PESQ</b></td>
+        <td></td>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2"><b>Noisy scenes</b></td>
+        <td scope="rol"><b>BUS</b></td>
+        <td><b>CAF</b></td>
+        <td><b>PED</b></td>
+        <td><b>STR</b></td>
+        <td><b>Avg.</b></td>
+      </tr>
+      <tr>
+        <th rowspan="7",scope="row">Supervised learning</th>
+        <th >Noisy(channel 1)</th>
+        <td>1.223±0.120</td>
+        <td>1.116±0.046</td>
+        <td>1.123±0.071</td>
+        <td>1.150±0.081</td>
+        <td>1.155±0.096</td>
+      </tr>
+      <tr>
+        <th>CNN</th>
+        <td>1.630±0.216</td>
+        <td>1.466±0.130</td>
+        <td>1.517±0.212</td>
+        <td>1.600±0.247</td>
+        <td>1.556±0.215</td>
+      </tr>
+      <tr>
+        <th>LSTM-IPD</th>
+        <td>1.911±0.411</td>
+        <td>1.486±0.161</td>
+        <td>1.512±0.276</td>
+        <td>1.656±0.345</td>
+        <td>1.644±0.359</td>
+      </tr>
+      <tr>
+        <th>UNet-GCN</th>
+        <td>1.613±0.234</td>
+        <td>1.414±0.126</td>
+        <td>1.472±0.213</td>
+        <td>1.563±0.241</td>
+        <td>1.518±0.224</td>
+      </tr>
+      <tr>
+        <th>STGCCN+<i>L<sub>MSE</sub></i></th>
+        <td >2.038±0.299</td>
+        <td >1.770±0.197</td>
+        <td >1.727±0.329</td>
+        <td >1.959±0.316</td>
+        <td >1.876±0.322</td>
+      </tr>
+      <th>STGCCN_NA+<i>L<sub>MSE_cont</sub></i></th>
+      <td>2.044±0.342</td>
+      <td>1.813±0.199</td>
+      <td>1.775±0.361</td>
+      <td>1.880±0.367</td>
+      <td>1.878±0.347/td>
+    </tr>
+      <tr>
+        <th scope="row">STGCCN_NTA+<i>L<sub>MSE</sub></i></th>
+        <td scope='row'>2.048+0.346</td>
+        <td scope='row'>1.884±0.170</td>
+        <td scope='row'>1.894±0.289</td>
+        <td scope='row'>1.982±0.363</td>
+        <td scope='row'>1.953+0.312</td>
+      </tr>
+      <tr>
+        <th rowspan="3",scope="top">Self-supervised learning</th>
+        <th>Metric-GAN-U</th>
+        <td>1.281±0.117</td>
+        <td>1.204±0.061</td>
+        <td>1.202±0.108</td>
+        <td>1.252±0.121</td>
+        <td>1.236±0.111</td>
+      </tr>
+      <tr>
+        <th>Metric-GAN-U-SV</th>
+        <td>1.585±0.176</td>
+        <td>1.521±0.207</td>
+        <td>1.544±0.271</td>
+        <td>1.525±0.231</td>
+        <td>1.546±0.063</td>
+      </tr>
+      <tr>
+        <th>STGCN-SV</th>
+        <td><b>2.072±0.324</b></td>
+        <td><b>1.939±0.154</b></td>
+        <td><b>1.938±0.282</b></td>
+        <td><b>2.069±0.274</b></td>
+        <td><b>2.003±0.279</b></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+  
+<!-- ############################################ 小图 ############################################ -->
 <div align="center">
   <img
   width="50%"
@@ -78,7 +199,8 @@
   <!--######################################### BUS ############################-->
  
   <div  class="table-name">
-    <strong>BUS</strong> 
+    <!-- <strong>BUS</strong>  -->
+    <h4>Audio clips in BUS scenes</h4>
   </div>
   <div class="table-container">
     <table  id="1-Proposed method-clean" class="wav1">
@@ -373,7 +495,8 @@
 
   <!--######################################### caf ############################-->
   <div  class="table-name">
-    <strong>CAF</strong> 
+    <!-- <strong>CAF</strong>  -->
+    <h4>Audio clips in CAF scenes</h4>
   </div>
   <div class="table-container">
     <table  id="1-Proposed method-Noisy" class="wav1">
@@ -642,7 +765,8 @@
 
   <!--######################################### PED ############################-->
   <div  class="table-name">
-    <strong>PED</strong> 
+    <h4>Audio clips in PED scenes</h4>
+    <!-- <strong>PED</strong>  -->
   </div>
   <div class="table-container">
     <table  id="1-Proposed method-CNN" class="wav1">
@@ -940,7 +1064,8 @@
   <!--######################################### STR ############################-->
  
   <div  class="table-name">
-    <strong>STR</strong> 
+    <!-- <strong>STR</strong>  -->
+    <h4>Audio clips in STR scenes</h4>
   </div>
   <div class="table-container">
     <table  id="1-Proposed method-LSTM-IPD" class="wav1">
@@ -1235,7 +1360,8 @@
 
   <div>
     <p>
-        <b style="font-size: 20px;">Conclusions:</b> 
+        <h4>Conclusions:</h4>
+        <!-- <b style="font-size: 20px;">Conclusions:</b>  -->
         <p>Table 1 shows the experimental results in four different scenes, where the upper part is the results of supervised models on a general dataset, and the lower part is the result of self-supervised models on a specific speaker dataset.</p>
         <p>According to the upper part of Table1:</b>
         <p>1) Compared with prior state-of-the art methods, our STGCN_NTA show 25.51%, 18.80% and 28.66% improvements over all scenes. </p> 
@@ -1258,50 +1384,175 @@
 <!-- ############################################ Extra3 ############################################ -->
 <!-- ############################################ Extra3 ############################################ -->
 
-<div><h2>3.Demonstrate the effectiveness of proposed feature-aware few-shot self-supervised learning framework on cocktail party</h2></div>
+<div><h3>B.Experiments on the effectiveness of proposed feature-aware few-shot self-supervised learning framework on cocktail party</h3></div>
 
-<!-- <div align="center">
-    <img
-    width="60%"
-    class="fit-picture"
-    src="table2-1.png" />    
+<!-- ############################################ Table2 ############################################ -->
+<p align="center"><strong>Table 2</strong> Performance of feature-aware few-shot self-superviaed learning framework in <b>cocktail party</b></p>   
+<!-- <div>  
+  <table class="my-table2">
+    <thead>
+      <tr>
+        <td></td>
+        <td ></td>
+        <td scope="rol"></td>
+        <td ></td>
+        <td><b>PESQ</b></td>
+        <td></td>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><b>Noisy scenes</b></td>
+        <td scope="rol"><b>BUS</b></td>
+        <td><b>CAF</b></td>
+        <td><b>PED</b></td>
+        <td><b>STR</b></td>
+        <td><b>Avg.</b></td>
+      </tr>
+      <tr>
+        <th rowspan="7",scope="row">Supervised learning</th>
+        <th >Noisy(channel 1)</th>
+        <td>1.223±0.120</td>
+        <td>1.116±0.046</td>
+        <td>1.123±0.071</td>
+        <td>1.150±0.081</td>
+        <td>1.155±0.096</td>
+      </tr>
+      <tr>
+        <th>CNN</th>
+        <td>1.630±0.216</td>
+        <td>1.466±0.130</td>
+        <td>1.517±0.212</td>
+        <td>1.600±0.247</td>
+        <td>1.556±0.215</td>
+      </tr>
+      <tr>
+        <th>LSTM-IPD</th>
+        <td>1.911±0.411</td>
+        <td>1.486±0.161</td>
+        <td>1.512±0.276</td>
+        <td>1.656±0.345</td>
+        <td>1.644±0.359</td>
+      </tr>
+      <tr>
+        <th>UNet-GCN</th>
+        <td>1.613±0.234</td>
+        <td>1.414±0.126</td>
+        <td>1.472±0.213</td>
+        <td>1.563±0.241</td>
+        <td>1.518±0.224</td>
+      </tr>
+      <tr>
+        <th>STGCCN+<i>L<sub>MSE</sub></i></th>
+        <td >2.038±0.299</td>
+        <td >1.770±0.197</td>
+        <td >1.727±0.329</td>
+        <td >1.959±0.316</td>
+        <td >1.876±0.322</td>
+      </tr>
+      <th>STGCCN_NA+<i>L<sub>MSE_cont</sub></i></th>
+      <td>2.044±0.342</td>
+      <td>1.813±0.199</td>
+      <td>1.775±0.361</td>
+      <td>1.880±0.367</td>
+      <td>1.880±0.367/td>
+    </tr>
+      <tr>
+        <th scope="row">STGCCN_NTA+<i>L<sub>MSE</sub></i></th>
+        <td scope='row'>2.048+0.346</td>
+        <td scope='row'>1.884±0.170</td>
+        <td scope='row'>1.894±0.289</td>
+        <td scope='row'>1.982±0.363</td>
+        <td scope='row'>1.953+0.312</td>
+      </tr>
+      <tr>
+        <th rowspan="2",scope="top">Self-supervised learning</th>
+        <th>Metric-GAN</th>
+        <td>1.281±0.117</td>
+        <td>1.204±0.061</td>
+        <td>1.202±0.108</td>
+        <td>1.252±0.121</td>
+        <td>1.236±0.111</td>
+      </tr>
+      <tr>
+        <th>STGCN-SV</th>
+        <td><b>1.281±0.324</b></td>
+        <td><b>1.939±0.154</b></td>
+        <td><b>1.938±0.282</b></td>
+        <td><b>2.069±0.274</b></td>
+        <td><b>2.003±0.279</b></td>
+      </tr>
+    </tbody>
+  </table>
 </div> -->
-
-<!-- <div align="center">
-  <p class="wavlink">
-    <h3><a href="#2-Performance of feature-aware few-shot self-supervised learning framework-CHIME3">Wav-CHIME3</a></h3> 
-  </p>
-</div> -->
-
-<!-- <div>
-    <p>
-        <b style="font-size: 20px;">Results Analysis in CHiME-3  </b> <br>
-        <b>1)</b>  Compared to the input in CHIME-3: Compared with the input noisy speech, the PESQ of MatricGAN-U, MatricGAN-U-SV, STGCSEN, and STGCN-SV increased by 6.97%, 33.81%, and 62.43, 73.4% respectively.<br>
-        <b>2)</b> In CHiIME-3, the PESQ of MetricGAN-U-SV is improved by 25% compared with MetricGAN-U, and the STGCN-SV is improved by 7% compared with STGCN.<br>
-    </p>
-</div> -->
-
-  <div align="center">
-    <img
-    width="60%"
-    class="fit-picture"
-    src="table2-2.png" />
-</div>
-
-<!-- <div align="center">
-  <p class="wavlink">
-    <h3><a href="#2-Performance of feature-aware few-shot self-supervised learning framework-cocktail party">Wav-cocktail party</a></h3> 
-  </p>
-</div> -->
-
+<div>
+  <table class="my-table">
+    <thead>
+      <tr>
+        <th>Noisy scenes</th>
+        <th>Interferences<br>SNR=10dB</th>
+        <th>Interferences<br>SNR=15dB</th>
+        <th>Background noises<br>SNR=10dB</th>
+        <th>Background noises<br>SNR=15dB</th>
+        <th>Avg.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Noisy</b>
+        <td>1.1482±0.0587</td>
+        <td>1.2487±0.1058</td>
+        <td>1.2099±0.1710</td>
+        <td>1.3653±0.2536</td>
+        <td>1.2520±0.1835</td>
+      </tr>
+      <tr>
+        <td><b>MeteicGAN-U</b></td>
+        <td>1.2765±0.1161</td>
+        <td>1.4854±0.1635</td>
+        <td>1.3545±0.2700</td>
+        <td>1.5812±0.3303</td>
+        <td>1.4244±0.2633</td>
+      </tr>
+      <tr>
+        <td><b>MetricGAN-U-SV</b>
+        <td>1.3447±0.1315</td>
+        <td>1.6521±0.1825</td>
+        <td>1.4953±0.2400</td>
+        <td>1.6830±0.2313</td>
+        <td>1.5438±0.2423</td>
+      </tr>
+      <tr>
+        <td><b>STGCSEN</b></td>
+        <td>1.5215±0.2065</td>
+        <td>1.8112±0.2016</td>
+        <td>1.6705±0.2498</td>
+        <td>1.8278±0.2316</td>
+        <td>1.7077±0.2552</td>
+      </tr>
+      <tr>
+        <td><b>STGCSEN-SV</b></td>
+        <td>1.5366±0.2061</td>
+        <td>1.8431±0.2055</td>
+        <td>1.6962±0.2609</td>
+        <td>1.8825±0.2294</td>
+        <td>1.7963±0.2644</td>
+      </tr>
+          </tbody>
+  </table>
+  </div>
 <!-- **************************************itf_SNR10*************************************** -->
  
 <div  id="2-Performance of feature-aware few-shot self-supervised learning framework-cocktail party"  class="table-name">
-  <strong>Sample on cocktail party</strong> 
+  <!-- <strong>Sample on cocktail party</strong>  -->
 </div>
 
+
 <div  class="table-name">
-  <strong>itf_SNR10</strong> 
+  <!-- <strong>itf_SNR10</strong>  -->
+  <h4>Audio clips in the interference scenes (SNR=10dB)</h4>
 </div>
 <div class="table-container">
   <table  class="wav1">
@@ -1467,8 +1718,10 @@
 <!-- ******************************************itf_SNR15********************************************* -->
 
 </div>
+
 <div  class="table-name">
-  <strong>itf_SNR15</strong> 
+  <!-- <strong>itf_SNR15</strong>  -->
+  <h4>Audio clips in the interference scenes (SNR=15dB)</h4>
 </div>
 <div class="table-container">
       <table  class="wav1">
@@ -1634,8 +1887,10 @@
 
 <!-- ******************************************noise_SNR10********************************************* -->
 </div>
+
 <div  class="table-name">
-<strong>noise_SNR10</strong> 
+<!-- <strong>noise_SNR10</strong>  -->
+  <h4>Audio clips in the background noise scenes (SNR=10dB)</h4>
 </div>
 <div class="table-container">
     <table  class="wav1">
@@ -1801,8 +2056,10 @@
 
 <!-- ******************************************noise_SNR15********************************************* -->
 </div>
+
 <div  class="table-name">
-<strong>noise_SNR15</strong> 
+<!-- <strong>noise_SNR15</strong>  -->
+  <h4>Audio clips in the background noise scenes (SNR=15dB)</h4>
 </div>
 <div class="table-container">
     <table  class="wav1">
@@ -1967,7 +2224,8 @@
 
 <!-- ****************************************** result ********************************************* -->
 <div>
-    <p><b style="font-size: 20px;">Conclusions: </b></p> 
+   <h4>Conclusions: </h4>
+    <!-- <p><b style="font-size: 20px;">Conclusions: </b></p>  -->
     <p>In cocktail party, STGCN-SV outperforms STGCN by average 2% over all SNRs, 
       Metric-GAN-U-SV outperforms Metric-GAN-U by average 8% over all SNRs. 
     </p>
@@ -2651,22 +2909,73 @@
 <!-- ############################################ Extra3 ############################################ -->
 <!-- ############################################ Extra3 ############################################ -->
   
-<h2>4.Experiments for the adaptability of STGCN to different arrays and scenes</h2>
-<h3>1) Experiments on rectangular array</h3>
+<h3>C.Experiments for the adaptability of STGCN with different arrays</h3>
+<!-- <h3>1) Experiments on rectangular array</h3> -->
 
-    <div align="center">
-      <img
-      width="70%"
-      class="fit-picture"
-      src="table3-1.png" />
-  </div>
+<!-- ############################################ Table3 ############################################ -->
+  <p align="center"><strong>Table 3</strong> PESQ of STGCCN on the rectangular array in CHiME3</p>   
+  <table class="my-table">
+    <thead>
+      <tr>
+        <th>Noisy scenes</th>
+        <th>BUS</th>
+        <th>CAF</th>
+        <th>PED</th>
+        <th>STR</th>
+        <th>Avg.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Noisy(channel 1)</b></td>
+        <td>1.275</td>
+        <td>1.150</td>
+        <td>1.178</td>
+        <td>1.260</td>
+        <td>1.216</td>
+      </tr>
+      <tr>
+        <td><b>CNN</b></td>
+        <td>1.778±0.255</td>
+        <td>1.538±0.207</td>
+        <td>1.621±0.244</td>
+        <td>1.753±0.298</td>
+        <td>1.673±0.271</td>
+      </tr>
+      <tr>
+        <td><b>LSTM-IPD</b></td>
+        <td>1.912±0.059</td>
+        <td>1.491±0.203</td>
+        <td>1.509±0.264</td>
+        <td>1.734±0.335</td>
+        <td>1.662±0.350</td>
+      </tr>
+      <tr>
+        <td><b>UNet-GCN</b></td>
+        <td>1.659±0.198</td>
+        <td>1.444±0.166</td>
+        <td>1.492±0.192</td>
+        <td>1.643±0.257</td>
+        <td>1.560±0.175</td>
+      </tr>
+      <tr>
+        <td><b>STGCCN</b></td>
+        <td><b>2.004±0.292</b></td>
+        <td><b>1.745±0.253</b></td>
+        <td><b>1.743±0.272</b></td>
+        <td><b>1.944±0.287</b></td>
+        <td><b>1.859±0.285</b></td>
+      </tr>
+    </tbody>
+  </table> 
 
      <!-- ######################### 方阵 ######################### -->  
 <!-- ############################################ BUS ############################################ -->
 
-<h3>Wav-rectangular array-CHIME3</h3>
+
 <div  class="table-name">
-  <strong>BUS</strong> 
+  <!-- <strong>BUS</strong>  -->
+  <h4>Audio clips on rectangular array in BUS scenes</h4>
 </div>
 <div class="table-container">
   <table  id="3-方针和圆阵-矩形阵列-CHIME3">
@@ -2832,7 +3141,8 @@
 <!-- ############################################ caf ############################################ -->
 
 <div  class="table-name">
-  <strong>CAF</strong> 
+  <!-- <strong>CAF</strong>  -->
+  <h4>Audio clips on rectangular array in CAF scenes</h4>
 </div>
 <div class="table-container">
   <table >
@@ -2995,8 +3305,10 @@
   </table>
 </div>
 <!-- ############################################ ped ############################################ -->  
+
 <div  class="table-name">
-  <strong>PED</strong> 
+  <!-- <strong>PED</strong>  -->
+  <h4>Audio clips on rectangular array in PED scenes</h4>
 </div>
 <div class="table-container">
   <table>
@@ -3159,8 +3471,10 @@
   </table>
 </div>
 <!-- ############################################ STR ############################################ -->
+
 <div  class="table-name">
-  <strong>STR</strong> 
+  <!-- <strong>STR</strong>  -->
+  <h4>Audio clips on rectangular array in STR scenes</h4>
 </div>
 <div class="table-container">
   <table>
@@ -3324,20 +3638,60 @@
 </div>
 
 
-  <h3>2) Experiments on circular array</h3>
+  <!-- <h3>2) Experiments on circular array</h3> -->
+
+      <!-- ######################### Table4 ######################### -->
+ <p align="center"><strong>Table 4</strong> PESQ of STGCCN on the circular array in cocktail party</p>   
+  <table class="my-table">
+    <thead>
+      <tr>
+        <th>Input SNR</th>
+        <th>-4dB</th>
+        <th>-3dB</th>
+        <th>-2dB</th>
+        <th>Avg.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>Noisy(channel 1)</b></td>
+        <td>1.161</td>
+        <td>1.303</td>
+        <td>1.633</td>
+        <td>1.366</td>
+      </tr>
+      <tr>
+        <td><b>CNN</b></td>
+        <td>1.347±0.246</td>
+        <td>1.530±0.270</td>
+        <td>1.753±0.270</td>
+        <td>1.543±0.311</td>
+      </tr>
+      <tr>
+        <td><b>UNet-GCN</b></td>
+        <td>1.287±0.208</td>
+        <td>1.574±0.241</td>
+        <td>1.716±0.280</td>
+        <td>1.526±0.243</td>
+      </tr>
+      <tr>
+        <td><b>STGCCN+<i>L<sub>MSE</sub></i></b></td>
+        <td><b>1.514±0.346</b></td>
+        <td><b>1.751±0.351</b></td>
+        <td><b>1.978±0.334</b></td>
+        <td><b>1.748±0.392</b></td>
+      </tr>
+    </tbody>
+  </table> 
   
-  <div align="center">
-    <img
-    width="70%"
-    class="fit-picture"
-    src="table3-2.png" />
-  </div>
  
   <!-- ############################################ 圆阵##################################################### -->
       <!-- ######################### cocktail party-SNR-2 ######################### -->
-  <h3>Wav- circle array-cocktail party</h3>
+  <!-- <h>Wav- circle array-cocktail party</h3> -->
+
     <div  class="table-name">
-      <strong>Wav- circle array-cocktail party-SNR-2</strong> 
+      <!-- <strong>Wav- circle array-cocktail party-SNR-2</strong> -->
+      <h4>Audio clips on circle array in cocktail party (SNR=-2dB)</h4>
     </div>
     <div class="table-container">
       <table  id="3-方针和圆阵-圆阵-cocktail party" class="wav1">
@@ -3475,8 +3829,10 @@
     </div>
   
     <!-- ######################### cocktail party-SNR-3 ######################### -->
+
     <div  class="table-name">
-      <strong>Wav- circle array-cocktail party-SNR-3</strong> 
+      <!-- <strong>Wav- circle array-cocktail party-SNR-3</strong>  -->
+      <h4>Audio clips on circle array in cocktail party (SNR=-3dB)</h4>
     </div>
     <div class="table-container">
       <table  id="3-方针和圆阵-圆阵-cocktail party" class="wav1">
@@ -3615,8 +3971,11 @@
 
 
         <!-- ######################### cocktail party-SNR-4 ######################### -->
+
+
     <div  class="table-name">
-      <strong>Wav- circle array-cocktail party-SNR-4</strong> 
+      <!-- <strong>Wav- circle array-cocktail party-SNR-4</strong>  -->
+      <h4>Audio clips on circle array in cocktail party (SNR=-4dB)</h4>
     </div>
     <div class="table-container">
       <table  id="3-方针和圆阵-圆阵-cocktail party" class="wav1">
@@ -3756,7 +4115,8 @@
       
 <div>
   <p>
-    <b style="font-size: 20px;">Conclusion:</b> 
+    <h4>Conclusions:</h4>
+    <!-- <b style="font-size: 20px;">Conclusion:</b>  -->
   </p>
   <p>
     1)In the rectangular array of CHiME3, STGCN improves 52% compared with noisy speech, 11% compared with optimal baseline (CNN), and 1 9% compared with UNet-GCN.
@@ -3769,10 +4129,3 @@
   </p>
   
 </div>
-
-
-
-      <p>
-        <a href="https://doi.org/10.1109/ICASSP43922.2022.9746054" class="link"><i>[1]M. Hao, J. Yu and L. Zhang, "Spatial-Temporal Graph Convolution Network for Multichannel Speech Enhancement," ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Singapore, Singapore, 2022, pp. 6512-6516.</i></a>
-      </p>
-    
