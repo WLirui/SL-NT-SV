@@ -10,7 +10,7 @@
   <i>Luyao Zhang, <a href="mailto:jjyu@bjtu.deu.cn">Jingjing Yu*</a>, Chi Yang, Lirui Wu</i>
 </p >
 <p align="center">Electronic and Information Engineering, Beijing Jiaotong University</p >
-<p align="right"><i>Submitted to ICASSP2024</i></p >
+<p align="center"><i>Submitted to  2024 IEEE International Conference on Acoustics, Speech and Signal Processing</i></p >
 
 
 
@@ -22,22 +22,34 @@
 </div>
 <div align="center">
   <p class="table-name">
-    <b>Fig. 1 </b>Framework of proposed STGCN-SV for self-supervised speech enhancement
+    <b>Fig. 1 </b>Framework of proposed STGCN-SV for self-supervised speech enhancement.<br>
   </p>
 </div>
-
+<div>
+  <p style="text-indent: 2em;">
+    The detials of dynamic multi-dimensional spatial-temporal GCN (STGCN) have been published in reference<a href="ref">[1]</a>, including the principle of STGCN, training details, and experimental validations.
+  </p>
+  <p style="text-indent: 2em;text-align: justify;" >
+    This paper proposes a self-supervised speech enhancement algorithm based on speaker verification which transforms the supervised STGCN to the unsupervised learnng framework, 
+    aiming to achieve robust speech enhancement of target speaker in the absence of ground-truth data and unseen scene conditions.
+     In addition, feature-aware modules are introduced to achieve dynamic environmental adaptation, which is applicable in the unknown multi-source realistic scenes for smart interactive devices.
+      Therefore, our self-supervised framework can denoise, suppress interfering persons and enhance the unfamiliar target by the few-shot speaker verification for unknown dynamic scenes. The framework is shown in Fig. 1.
+  </p>
+</div>
 <!-- ############################################链接################################ -->
 
 
-<h2><a>1.Our published work: STGCN[1]</a></h1> 
-  <p class="col-md">    
-    The detials of multi-dimentional spatial-temporal graph convolution network have been published in reference[1].</p>
+<!-- <h2>1.Proposed STGCN-SV</h1>  -->
+  <!-- <p class="col-md">    
+    The detials of multi-dimentional spatial-temporal graph convolution network have been published in reference[1].
+  </p> -->
     <!-- The audio clips and samples ：click here            -->
     <!-- The link of pdf the the paper：click here -->
-  <p class="col-md">[1]M. Hao, J. Yu and L. Zhang, "Spatial-Temporal Graph Convolution Network for Multichannel Speech Enhancement,"
+
+  <!-- <p class="col-md" id="ref">[1]M. Hao, J. Yu and L. Zhang, "Spatial-Temporal Graph Convolution Network for Multichannel Speech Enhancement,"
     ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Singapore, Singapore, 2022, pp. 6512-6516
     [<a href="https://doi.org/10.1109/ICASSP43922.2022.9746054"  class="link" >Paper</a>] [<a href="https://ahuei.github.io/stgcsen"  class="link" >Audio clips</a>]   
-  </p>   
+  </p>    -->
 
 <!-- <h2>2.Demonstrate the effectiveness of proposed self-supervised learning framework with speaker verification </h2>  -->
 <!-- <h2>3.Demonstrate the effectiveness of proposed feature-aware few-shot self-supervised learning framework on cocktail party</h2> -->
@@ -56,7 +68,7 @@
 
 <!-- ############################################ extra1 ############################################ -->
 <!-- ############################################ extra1 ############################################ -->
-<h2>2.Experimental validations</h2>
+<h2>Experimental validations</h2>
 <h3>A.Experiments on the effectiveness of proposed self-supervised learning framework with speaker verification on CHiME-3</h3>
 <!-- <div align="center">
     <img
@@ -4128,4 +4140,11 @@
     3)From the experimental results, it can be demonstrated that STGCN improves the quality of target signal on both rectangular and circular arrays, proving the effectiveness and robustness of our multidimensional Spatial-temporal GCN.
   </p>
   
+</div>
+<div>
+  <h2>Referrence</h2>
+    <p class="col-md" id="ref">[1]M. Hao, J. Yu and L. Zhang, "Spatial-Temporal Graph Convolution Network for Multichannel Speech Enhancement,"
+    ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Singapore, Singapore, 2022, pp. 6512-6516
+    [<a href="https://doi.org/10.1109/ICASSP43922.2022.9746054"  class="link" >Paper</a>] [<a href="https://ahuei.github.io/stgcsen"  class="link" >Audio clips</a>]   
+  </p>   
 </div>
